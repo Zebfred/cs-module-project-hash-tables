@@ -1,5 +1,16 @@
 def no_dups(s):
     # Your code here
+    str_thing = ""
+    words = {}
+    s = str_thing.split(" ")
+    for word in s:
+        if word not in words:
+            words[word] = 1
+            s += " " + word
+    if s[0] == " ":
+                s = s [1:]
+    return s    
+            
 
 
 
